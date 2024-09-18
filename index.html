@@ -4,19 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Practice</title>
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <header>
       <h2>DOM Practice</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis
+        incidunt quos, perferendis libero suscipit. Deserunt eius at ipsa
+        quibusdam tempore nulla magni nam a rerum non voluptatum sequi
+        cupiditate beatae numquam animi eaque porro, quisquam debitis hic
+        repellendus! Repellendus?
+      </p>
     </header>
 
     <main>
-      <h2>DOM de re baba.</h2>
-      <ul>
-        <li>Soflii baba</li>
-        <li>Karbilla</li>
-        <li>Bonobash</li>
-      </ul>
+      <section>
+        <h2>DOM de re baba.</h2>
+        <ul>
+          <li>Soflii baba</li>
+          <li>Karbilla</li>
+          <li>Bonobash</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fruits</h2>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Water-melon</li>
+          <li>Carrot</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="vegi-title">Vegetables</h2>
+        <ul>
+          <li class="Imp-vegi">Cucumber</li>
+          <li class="Imp-vegi">Benjul</li>
+          <li class="Imp-vegi">Tomato</li>
+          <li>Onion</li>
+        </ul>
+      </section>
     </main>
+    <script src="JS/dom.js"></script>
+    <script>
+      // console.log("Adding js inside the html file");
+      const licollection = document.getElementsByTagName("li");
+      // console.log(licollection);
+      for (const li of licollection) {
+        //console.log(li.innerText);
+      }
+
+      const vegi = document.getElementsByClassName("Imp-vegi");
+      //console.log(vegi);
+      for (const vegis of vegi) {
+        console.log(vegis.innerText);
+      }
+    </script>
   </body>
 </html>
