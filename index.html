@@ -18,7 +18,7 @@
       </p>
     </header>
 
-    <main>
+    <main id="main-contianer">
       <section>
         <h2>DOM de re baba.</h2>
         <ul>
@@ -28,8 +28,10 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Fruits</h2>
+      <section class="fruit-container">
+        <h2 id="fruit-title" class="mona gona soma tona">
+          Here are difference various of Fruits
+        </h2>
         <ul>
           <li>Apple</li>
           <li>Banana</li>
@@ -38,7 +40,7 @@
         </ul>
       </section>
 
-      <section>
+      <section id="vegi-container" class="text-center larg-text">
         <h2 id="vegi-title">Vegetables</h2>
         <ul>
           <li class="Imp-vegi">Cucumber</li>
@@ -47,20 +49,42 @@
           <li>Onion</li>
         </ul>
       </section>
+
+      <section id="placesName">
+        <h2 id="place-title">Places</h2>
+        <ul id="places-list">
+          <li class="Imp-place">Dhaka</li>
+          <li class="Imp-place">Khulna</li>
+          <li class="Imp-place">Tangail</li>
+          <li>Mirzapur</li>
+        </ul>
+      </section>
     </main>
     <script src="JS/dom.js"></script>
+    <script src="JS/append.js"></script>
+    <script src="JS/styleIn.js"></script>
     <script>
       // console.log("Adding js inside the html file");
       const licollection = document.getElementsByTagName("li");
       // console.log(licollection);
       for (const li of licollection) {
-        //console.log(li.innerText);
+        // console.log(li.innerText);
       }
 
       const vegi = document.getElementsByClassName("Imp-vegi");
       //console.log(vegi);
       for (const vegis of vegi) {
-        console.log(vegis.innerText);
+        // console.log(vegis.innerText);
+      }
+
+      // change the vegei title name
+      const veg = document.getElementById("vegi-title");
+      veg.innerText = "Vegetables change by JS";
+
+      // Query selector
+      const fru = document.querySelectorAll(".fruit-container li");
+      for (const fr of fru) {
+        // console.log(fr.innerText);
       }
     </script>
   </body>

@@ -4,3 +4,9 @@ h2 {
 .Imp-vegi {
   color: darkturquoise;
 }
+.text-center {
+  text-align: center;
+}
+.larg-text {
+  font-size: 3rem;
+}
